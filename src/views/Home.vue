@@ -7,12 +7,24 @@
 
 <script>
 // @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
     HelloWorld
+  },
+  created() {
+    this.$store.dispatch('SignIn', {
+      user: {
+        username: 'jonh@email.com',
+        password: 'somepass'
+      }
+    }).then(response => {
+      console.log('RESPONSE : ', response)
+    }).catch(error => {
+      console.log('ERROR : ', error)
+    })
   }
-};
+}
 </script>
