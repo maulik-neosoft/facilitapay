@@ -144,22 +144,20 @@ export default {
         'password': this.password
       }
       return (
-
-        this.SignIn({ user })
-          // eslint-disable-next-line no-unused-vars
-          .then((token) => {
-            this.tryingToLogIn = false
-            this.isAuthError = false
-            // Redirect to the originally requested page, or to the home page
-            this.$router.push(
-              this.$route.query.redirectFrom || { name: 'home' }
-            )
-          })
-          .catch((error) => {
-            this.tryingToLogIn = false
-            this.authError = error || ''
-            this.isAuthError = true
-          })
+        this.$store.dispatch('SignIn', { user }).then(response => {
+          console.log('RESPONSE : ', response)
+          this.tryingToLogIn = false
+          this.isAuthError = false
+          // Redirect to the originally requested page, or to the home page
+          this.$router.push(
+            this.$route.query.redirectFrom || { name: 'home' }
+          )
+        }).catch(error => {
+          console.log('ERROR : ', error)
+          this.tryingToLogIn = false
+          this.authError = error || ''
+          this.isAuthError = true
+        })
       )
     }
   }
