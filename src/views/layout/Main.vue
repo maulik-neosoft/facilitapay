@@ -9,7 +9,7 @@
           <slot />
         </div>
       </div>
-      <Footer />
+      <!-- <Footer /> -->
     </div>
   </div>
 </template>
@@ -18,12 +18,12 @@
 import router from '@/router'
 import Header from '@/components/Header'
 import Sidebar from '@/components/Sidebar'
-import Footer from '@/components/Footer'
+// import Footer from '@/components/Footer'
 export default {
   components: {
     Header,
-    Sidebar,
-    Footer
+    Sidebar
+    // Footer
     // RightBar
   },
   methods: {
