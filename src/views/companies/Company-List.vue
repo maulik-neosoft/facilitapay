@@ -49,7 +49,7 @@
                   </tr>
                   <tr>
                     <th scope="row">2</th>
-                    <td>38125238901004</td>
+                    <td><router-link to="/subject/companies/1/detail">38125238901004</router-link></td>
                     <td>cnpj</td>
                     <td>Company Social Name LTDA</td>
                     <td>Company Fantasy Name</td>
@@ -58,7 +58,7 @@
                   </tr>
                   <tr>
                     <th scope="row">3</th>
-                    <td>38125238901004</td>
+                   <td><router-link to="/subject/companies/1/detail">38125238901004</router-link></td>
                     <td>cnpj</td>
                     <td>Company Social Name LTDA</td>
                     <td>Company Fantasy Name</td>

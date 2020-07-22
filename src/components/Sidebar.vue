@@ -31,19 +31,19 @@
           </li>
            <li>
             <router-link tag="a" to="/" class="side-nav-link">
-              <i class="ti-home"></i>
+              <i class="ti-money"></i>
               <span>Transaction</span>
             </router-link>
           </li>
            <li>
             <router-link tag="a" to="/" class="side-nav-link">
-              <i class="ti-home"></i>
+              <i class="ti-line-double"></i>
               <span>Wires</span>
             </router-link>
           </li>
            <li>
             <router-link tag="a" to="/" class="side-nav-link">
-              <i class="ti-home"></i>
+              <i class="ti-new-window"></i>
               <span>Webhook</span>
             </router-link>
           </li>
