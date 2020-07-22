@@ -11,7 +11,6 @@
       </div>
       <Footer />
     </div>
-    <!-- <RightBar /> -->
   </div>
 </template>
 
@@ -19,9 +18,7 @@
 import router from '@/router'
 import Header from '@/components/Header'
 import Sidebar from '@/components/Sidebar'
-// import Sidebar from "@/components/sidebar";
 import Footer from '@/components/Footer'
-// import RightBar from "@/components/right-bar";
 export default {
   components: {
     Header,
