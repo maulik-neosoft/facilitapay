@@ -11,7 +11,7 @@
     </div>
     <div class="col-sm-6">
       <div class="float-right d-none d-md-block">
-       <b-button right variant="primary">Create</b-button>
+       <router-link to="/subject/companies/add"> <b-button right variant="primary">Create</b-button> </router-link>
       </div>
     </div>
   </div>
@@ -39,8 +39,8 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">1</th>
-                    <td>38125238901004</td>
+                    <th scope="row"> 1</th>
+                    <td><router-link to="/subject/companies/1/detail">38125238901004</router-link></td>
                     <td>cnpj</td>
                     <td>Company Social Name LTDA</td>
                     <td>Company Fantasy Name</td>
@@ -79,7 +79,7 @@
 import Layout from '@/views/layout/Main.vue'
 // import PageHeader from '@/components/Page-Header'
 export default {
-  name: 'Home',
+  name: 'Companies',
   components: {
     Layout
     // PageHeader
@@ -89,15 +89,15 @@ export default {
       title: 'Form Elements',
       items: [
         {
-          text: 'Veltrix',
+          text: 'Subject',
           href: '/'
         },
         {
-          text: 'Forms',
-          href: '/'
+          text: 'Company',
+          href: '/subject/companies'
         },
         {
-          text: 'Form Elements',
+          text: 'List',
           active: true
         }
       ]
