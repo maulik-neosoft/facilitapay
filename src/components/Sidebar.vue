@@ -11,324 +11,43 @@
               <span>Dashboard</span>
             </router-link>
           </li>
-          <li>
-            <router-link tag="a" to="/calendar" class="side-nav-link">
-              <i class="ti-calendar"></i>
-              <span>Calendar</span>
-            </router-link>
-          </li>
+
           <li>
             <a href="javascript: void(0);" class="has-arrow">
               <i class="ti-email"></i>
-              <span>Email</span>
+              <span>Subject</span>
             </a>
             <ul class="sub-menu" aria-expanded="false">
               <li>
-                <router-link to="/email/inbox" class="side-nav-link">Inbox</router-link>
+                <router-link to="/subject/companies" class="side-nav-link">Companies</router-link>
               </li>
               <li>
-                <router-link to="/email/read-email" class="side-nav-link">Email Read</router-link>
+                <router-link to="/subject/people" class="side-nav-link">People</router-link>
               </li>
               <li>
-                <router-link to="/email/compose" class="side-nav-link">Email Compose</router-link>
+                <router-link to="/subject/bank-account" class="side-nav-link">Bank Account</router-link>
               </li>
             </ul>
           </li>
-          <li class="menu-title">Components</li>
-          <li>
-            <a href="javascript: void(0);" class="has-arrow">
-              <i class="ti-package"></i>
-              <span>UI Elements</span>
-            </a>
-            <ul class="sub-menu" aria-expanded="false">
-              <li>
-                <router-link to="/ui/alerts" class="side-nav-link">Alerts</router-link>
-              </li>
-              <li>
-                <router-link to="/ui/buttons" class="side-nav-link">Buttons</router-link>
-              </li>
-              <li>
-                <router-link to="/ui/cards" class="side-nav-link">Cards</router-link>
-              </li>
-              <li>
-                <router-link to="/ui/carousel" class="side-nav-link">Carousel</router-link>
-              </li>
-              <li>
-                <router-link to="/ui/dropdowns" class="side-nav-link">Dropdowns</router-link>
-              </li>
-              <li>
-                <router-link to="/ui/grid" class="side-nav-link">Grid</router-link>
-              </li>
-              <li>
-                <router-link to="/ui/images" class="side-nav-link">Images</router-link>
-              </li>
-              <li>
-                <router-link to="/ui/modals" class="side-nav-link">Modals</router-link>
-              </li>
-              <li>
-                <router-link to="/ui/rangeslider" class="side-nav-link">Range Slider</router-link>
-              </li>
-              <li>
-                <router-link to="/ui/progressbar" class="side-nav-link">Progress Bars</router-link>
-              </li>
-              <li>
-                <router-link to="/ui/sweetalert" class="side-nav-link">Sweet-Alert</router-link>
-              </li>
-              <li>
-                <router-link to="/ui/tabs" class="side-nav-link">Tabs &amp; Accordions</router-link>
-              </li>
-              <li>
-                <router-link to="/ui/typography" class="side-nav-link">Typography</router-link>
-              </li>
-              <li>
-                <router-link to="/ui/video" class="side-nav-link">Video</router-link>
-              </li>
-              <li>
-                <router-link to="/ui/general" class="side-nav-link">General</router-link>
-              </li>
-              <li>
-                <router-link to="/ui/colors" class="side-nav-link">Colors</router-link>
-              </li>
-              <li>
-                <router-link to="/ui/rating" class="side-nav-link">Rating</router-link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="javascript: void(0);" class="has-dropdown">
-              <i class="ti-receipt"></i>
-              <span class="badge badge-pill badge-success float-right">6</span>
-              <span>Forms</span>
-            </a>
-            <ul class="sub-menu" aria-expanded="false">
-              <li>
-                <router-link tag="a" to="/form/elements" class="side-nav-link">Form Elements</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/form/validation" class="side-nav-link">Form Validation</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/form/advanced" class="side-nav-link">Form Advanced</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/form/editor" class="side-nav-link">Form Editors</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/form/uploads" class="side-nav-link">Form File Upload</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/form/repeater" class="side-nav-link">Form Repeater</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/form/wizard" class="side-nav-link">Form Wizard</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/form/mask" class="side-nav-link">Form Mask</router-link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="javascript: void(0);" class="has-arrow">
-              <i class="ti-pie-chart"></i>
-              <span>Charts</span>
-            </a>
-            <ul class="sub-menu" aria-expanded="false">
-              <li>
-                <router-link tag="a" to="/charts/chartist" class="side-nav-link">Chartist Chart</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/charts/chartjs" class="side-nav-link">Chartjs Chart</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/charts/apex" class="side-nav-link">Apex Chart</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/charts/echart" class="side-nav-link">E - Chart</router-link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="javascript: void(0);" class="has-arrow">
-              <i class="ti-view-grid"></i>
-              <span>Tables</span>
-            </a>
-            <ul class="sub-menu" aria-expanded="false">
-              <li>
-                <router-link tag="a" to="/tables/basic" class="side-nav-link">Basic Tables</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/tables/advancedtable" class="side-nav-link">Advanced Table</router-link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="javascript: void(0);" class="has-arrow">
-              <i class="ti-face-smile"></i>
-              <span>Icons</span>
-            </a>
-            <ul class="sub-menu" aria-expanded="false">
-              <li>
-                <router-link tag="a" to="/icons/material" class="side-nav-link">Material Design</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/icons/fontawesome" class="side-nav-link">Font Awesome</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/icons/ion" class="side-nav-link">Ion Icons</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/icons/themify" class="side-nav-link">Themify Icons</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/icons/dripicons" class="side-nav-link">Dripicons</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/icons/typicons" class="side-nav-link">Typicons Icons</router-link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <router-link tag="a" to="/maps/google" class="side-nav-link">
-              <i class="ti-location-pin"></i>
-              <span class="badge badge-pill badge-danger float-right">2</span>
-              <span>Google Map</span>
+           <li>
+            <router-link tag="a" to="/" class="side-nav-link">
+              <i class="ti-home"></i>
+              <span>Transaction</span>
             </router-link>
           </li>
-          <li class="menu-title">Extras</li>
-          <li>
-            <a href="javascript: void(0);" class="has-arrow">
-              <i class="ti-layout"></i>
-              <span>Layouts</span>
-            </a>
-            <ul class="sub-menu" aria-expanded="false">
-              <li>
-                <a href="javascript:void(0);" @click="changeLayout('horizontal')">Horizontal</a>
-              </li>
-              <li>
-                <a href="javascript:void(0);" @click="compactSidebar()">Compact Sidebar</a>
-              </li>
-              <li>
-                <a href="javascript:void(0);" @click="iconSidebar()">Icon Sidebar</a>
-              </li>
-              <li>
-                <a href="javascript:void(0);" @click="boxedLayout()">Boxed Layout</a>
-              </li>
-            </ul>
+           <li>
+            <router-link tag="a" to="/" class="side-nav-link">
+              <i class="ti-home"></i>
+              <span>Wires</span>
+            </router-link>
           </li>
-          <li>
-            <a href="javascript: void(0);" class="has-arrow">
-              <i class="ti-archive"></i>
-              <span>Authentication</span>
-            </a>
-            <ul class="sub-menu" aria-expanded="false">
-              <li>
-                <router-link tag="a" to="/pages/login-1">Login 1</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/pages/login-2">Login 2</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/pages/register-1">Register 1</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/pages/register-2">Register 2</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/pages/recoverpwd-1">Recover Password 1</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/pages/recoverpwd-2">Recover Password 2</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/pages/lock-screen1">Lock Screen 1</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/pages/lock-screen2">Lock Screen 2</router-link>
-              </li>
-            </ul>
+           <li>
+            <router-link tag="a" to="/" class="side-nav-link">
+              <i class="ti-home"></i>
+              <span>Webhook</span>
+            </router-link>
           </li>
-          <li>
-            <a href="javascript: void(0);" class="has-arrow">
-              <i class="ti-support"></i>
-              <span>Extra Pages</span>
-            </a>
-            <ul class="sub-menu" aria-expanded="false">
-              <li>
-                <router-link tag="a" to="/pages/timeline" class="side-nav-link">Timeline</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/pages/invoice" class="side-nav-link">Invoice</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/pages/directory" class="side-nav-link">Directory</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/pages/blank-page" class="side-nav-link">Blank Page</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/pages/404" class="side-nav-link">Error 404</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/pages/500" class="side-nav-link">Error 500</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/pages/pricing" class="side-nav-link">Pricing</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/pages/maintenance" class="side-nav-link">Maintenance</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/pages/faqs" class="side-nav-link">FAQs</router-link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="javascript: void(0);" class="has-arrow">
-              <i class="ti-bookmark-alt"></i>
-              <span>Email Templates</span>
-            </a>
-            <ul class="sub-menu" aria-expanded="false">
-              <li>
-                <router-link
-                  tag="a"
-                  to="/email-template/basic"
-                  class="side-nav-link"
-                >Basic Action Email</router-link>
-              </li>
-              <li>
-                <router-link tag="a" to="/email-template/alert" class="side-nav-link">Alert Email</router-link>
-              </li>
-              <li>
-                <router-link
-                  tag="a"
-                  to="/email-template/billing"
-                  class="side-nav-link"
-                >Billing Email</router-link>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="javascript: void(0);" class="has-arrow">
-              <i class="ti-more"></i>
-              <span>Multi Level</span>
-            </a>
-            <ul class="sub-menu" aria-expanded="true">
-              <li>
-                <a href="javascript: void(0);">Level 1.1</a>
-              </li>
-              <li>
-                <a href="javascript: void(0);" class="has-arrow">Level 1.2</a>
-                <ul class="sub-menu" aria-expanded="true">
-                  <li>
-                    <a href="javascript: void(0);">Level 2.1</a>
-                  </li>
-                  <li>
-                    <a href="javascript: void(0);">Level 2.2</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li>
+
         </ul>
       </div>
     </simplebar>

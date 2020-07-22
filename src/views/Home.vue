@@ -1,5 +1,7 @@
 <template>
-  <Layout></Layout>
+  <Layout>
+    <p> Hello </p>
+  </Layout>
 </template>
 
 <script>
