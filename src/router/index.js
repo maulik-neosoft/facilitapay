@@ -17,25 +17,61 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/account/Login.vue')
+      import('../views/account/Login.vue')
   },
   {
     path: '/subject/companies',
     name: 'Companies',
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/companies/Company-List.vue')
+      import('../views/companies/Company-List.vue')
   },
   {
     path: '/subject/companies/add',
     name: 'AddCompany',
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/companies/Add-Company.vue')
+      import('../views/companies/Add-Company.vue')
   },
   {
     path: '/subject/companies/:id/detail',
     name: 'CompanyDetail',
     component: () =>
-      import(/* webpackChunkName: "about" */ '../views/companies/Company-Detail.vue')
+      import('../views/companies/Company-Detail.vue')
+  },
+  {
+    path: '/subject/people',
+    name: 'People',
+    component: () =>
+      import('../views/people/List.vue')
+  },
+  {
+    path: '/subject/people/add',
+    name: 'AddPeople',
+    component: () =>
+      import('../views/people/Add.vue')
+  },
+  {
+    path: '/subject/people/:id/detail',
+    name: 'PeopleDetail',
+    component: () =>
+      import('../views/people/Detail.vue')
+  },
+  {
+    path: '/subject/bank-account',
+    name: 'BankAccount',
+    component: () =>
+      import('../views/bank-account/List.vue')
+  },
+  {
+    path: '/subject/bank-account/add',
+    name: 'AddBankAccount',
+    component: () =>
+      import('../views/bank-account/Add.vue')
+  },
+  {
+    path: '/subject/bank-account/:id/detail',
+    name: 'BankAccountDetail',
+    component: () =>
+      import('../views/bank-account/Detail.vue')
   }
 ]
 
